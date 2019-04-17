@@ -1,0 +1,4 @@
+12:35:40.409 [main] INFO  resources.Base - Successfully navigated to url
+12:35:53.414 [main] INFO  resources.Base - Driver is closed
+12:35:55.699 [main] INFO  resources.Base - Driver is initialized
+12:36:16.946 [main] INFO  resources.Base - Successfully navigated to url

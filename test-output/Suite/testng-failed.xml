@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.listener"/>
+    <listener class-name="listeners.ExtentReportsListeners"/>
+  </listeners>
+  <test name="Validating title(failed)">
+    <classes>
+      <class name="testCases.ValidateTitleTest">
+        <methods>
+          <include name="homePageText"/>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+        </methods>
+      </class> <!-- testCases.ValidateTitleTest -->
+      <class name="testCases.ValidateNavigationBarTest">
+        <methods>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+        </methods>
+      </class> <!-- testCases.ValidateNavigationBarTest -->
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="executeAfterEveryTest"/>
+          <include name="executeBeforeEveryTest"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
+    </classes>
+  </test> <!-- Validating title(failed) -->
+  <test name="Validating navigation bar(failed)">
+    <classes>
+      <class name="testCases.ValidateNavigationBarTest">
+        <methods>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+          <include name="validateNavigation"/>
+        </methods>
+      </class> <!-- testCases.ValidateNavigationBarTest -->
+      <class name="testCases.ValidateTitleTest">
+        <methods>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+        </methods>
+      </class> <!-- testCases.ValidateTitleTest -->
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="executeAfterEveryTest"/>
+          <include name="executeBeforeEveryTest"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
+    </classes>
+  </test> <!-- Validating navigation bar(failed) -->
+  <test name="Validating login(failed)">
+    <classes>
+      <class name="testCases.ValidateTitleTest">
+        <methods>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+        </methods>
+      </class> <!-- testCases.ValidateTitleTest -->
+      <class name="testCases.ValidateNavigationBarTest">
+        <methods>
+          <include name="executeBeforeEveryTest"/>
+          <include name="executeAfterEveryTest"/>
+        </methods>
+      </class> <!-- testCases.ValidateNavigationBarTest -->
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="executeAfterEveryTest"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="executeBeforeEveryTest"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
+    </classes>
+  </test> <!-- Validating login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
