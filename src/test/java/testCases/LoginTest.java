@@ -21,6 +21,7 @@ public class LoginTest extends Base {
 	public void executeBeforeEveryTest() throws IOException {
 		driver = initializeDriver();
 		log.info("Driver is initialized");
+		log.info("test log");
 	}
 	
 	@Test(dataProvider="getData")
